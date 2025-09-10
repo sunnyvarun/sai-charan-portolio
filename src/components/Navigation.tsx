@@ -41,14 +41,7 @@ const Navigation = () => {
             ))}
           </div>
 
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="cta" size="lg" asChild>
-              <a href="tel:9550836548" className="flex items-center gap-2">
-                <Phone className="w-4 h-4" />
-                Book Appointment
-              </a>
-            </Button>
-          </div>
+
 
           {/* Mobile Menu Button */}
           <button
