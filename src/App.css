@@ -6,6 +6,13 @@
 }
 
 /* ✅ Hide scrollbar globally */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;  /* 🚀 removes horizontal scrollbar */
+  overflow-y: scroll;  /* keep vertical scrolling */
+}
 
 /* Chrome, Safari, Edge */
 ::-webkit-scrollbar {
