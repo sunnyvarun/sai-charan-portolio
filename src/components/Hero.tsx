@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-therapy.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-20">
+    <section className="relative min-h-screen flex items-center pt-40">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -29,12 +29,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-10">
-            <Button variant="hero" size="xl" asChild>
-              <a href="/contact" className="flex items-center gap-2">
-                <Calendar className="w-5 h-5" />
-                Book an Appointment
-              </a>
-            </Button>
+            
             <Button variant="outline" size="xl" asChild>
               <a href="tel:9550836548" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
