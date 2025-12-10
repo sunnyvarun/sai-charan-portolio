@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="font-poppins font-semibold text-xl mb-4">Dr. Sai Charan</h3>
+            <h3 className="font-poppins font-semibold text-xl mb-4">Dr. Sai Charan (PT)</h3>
             <p className="text-background/80 mb-2">BPT, MPT (Neurology)</p>
             <p className="text-background/80">
               Expert physiotherapy and neurological rehabilitation services
@@ -61,7 +61,7 @@ const Footer = () => {
 
         <div className="border-t border-background/20 pt-6 text-center">
           <p className="text-background/60">
-            © {new Date().getFullYear()} Dr. Sai Charan. All rights reserved.
+            © {new Date().getFullYear()} Dr. Sai Charan (PT). All rights reserved.
           </p>
         </div>
       </div>

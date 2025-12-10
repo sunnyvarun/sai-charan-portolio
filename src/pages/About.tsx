@@ -8,7 +8,7 @@ const About = () => {
       <div className="bg-gradient-hero py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="font-poppins text-4xl md:text-5xl font-bold text-foreground mb-4">
-            About Dr. Sai Charan
+            About Dr. Sai Charan(PT)
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Learn about our expert physiotherapist and his approach to patient care

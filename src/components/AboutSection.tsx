@@ -8,11 +8,11 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 animate-fade-in">
             <h2 className="font-poppins text-3xl md:text-4xl font-bold text-foreground mb-6">
-              About Dr. Sai Charan
+              About Dr. Sai Charan (PT)
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Dr. Sai Charan, BPT, MPT (Neurology), is a compassionate and dedicated 
+              Dr. Sai Charan (PT), BPT, MPT (Neurology), is a compassionate and dedicated 
               physiotherapist with over 4 years of experience in treating neurological, 
               orthopedic, and rehabilitation cases. His expertise lies in providing 
               evidence-based therapy tailored to each patient's unique needs, ensuring 
@@ -58,7 +58,7 @@ const AboutSection = () => {
                 "My mission is to help every patient achieve their maximum potential for 
                 recovery and return to their daily activities with confidence and independence."
               </p>
-              <p className="text-sm text-primary mt-2 font-semibold">- Dr. Sai Charan</p>
+              <p className="text-sm text-primary mt-2 font-semibold">- Dr. Sai Charan (PT)</p>
             </div>
           </div>
 
@@ -67,7 +67,7 @@ const AboutSection = () => {
               <div className="absolute inset-0 gradient-primary opacity-10 rounded-2xl transform rotate-6"></div>
               <img
                 src={doctorImage}
-                alt="Dr. Sai Charan - Physiotherapist"
+                alt=" (PT) - Physiotherapist"
                 className="relative rounded-2xl shadow-xl w-full max-w-md mx-auto"
               />
             </div>

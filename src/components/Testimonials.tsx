@@ -5,19 +5,19 @@ const testimonials = [
   {
     name: "Rajesh Kumar",
     condition: "Stroke Recovery",
-    text: "Dr. Sai Charan's sessions helped me regain my strength after a stroke. His dedication and personalized approach made all the difference in my recovery. Highly recommended!",
+    text: "Dr. Sai Charan(PT)'s sessions helped me regain my strength after a stroke. His dedication and personalized approach made all the difference in my recovery. Highly recommended!",
     rating: 5,
   },
   {
     name: "Priya Sharma",
     condition: "Parkinson's Management",
-    text: "The therapy sessions have significantly improved my mobility and confidence. Dr. Sai Charan is extremely patient and knowledgeable. I'm grateful for his care.",
+    text: "The therapy sessions have significantly improved my mobility and confidence. Dr. Sai Charan(PT) is extremely patient and knowledgeable. I'm grateful for his care.",
     rating: 5,
   },
   {
     name: "Venkat Reddy",
     condition: "Sports Injury",
-    text: "After my knee injury, I thought I'd never play cricket again. Thanks to Dr. Sai Charan's expertise, I'm back on the field stronger than before!",
+    text: "After my knee injury, I thought I'd never play cricket again. Thanks to Dr. Sai Charan(PT)'s expertise, I'm back on the field stronger than before!",
     rating: 5,
   },
 ];
