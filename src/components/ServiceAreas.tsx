@@ -7,6 +7,7 @@ const areas = [
   "Kismathpur",
   "Narsingi",
   "Langer House",
+  "Kokapet",
 ];
 
 const ServiceAreas = () => {

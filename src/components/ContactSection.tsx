@@ -81,7 +81,7 @@ const ContactSection = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Service Areas</h3>
                     <p className="text-muted-foreground">
-                      Suncity, Bandlaguda Jagir, Kalimandir, Kismathpur, Narsingi, Langer House
+                      Suncity, Bandlaguda Jagir, Kalimandir, Kismathpur, Narsingi, Langer House, Kokapet
                     </p>
                   </div>
                 </div>
