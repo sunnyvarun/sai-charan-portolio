@@ -1,4 +1,5 @@
-import { Brain, Heart, Baby, Activity, Users, Dumbbell } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Brain, Heart, Baby, Activity, Users, Dumbbell, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
@@ -7,36 +8,42 @@ const services = [
     title: "Neurological Conditions",
     description: "Stroke, Parkinson's, Multiple Sclerosis, Spinal cord injury",
     color: "text-primary",
+    slug: "neurological-conditions",
   },
   {
     icon: Activity,
     title: "Orthopedic Conditions",
     description: "Post-fracture rehab, Arthritis, Joint pain",
     color: "text-secondary",
+    slug: "orthopedic-conditions",
   },
   {
     icon: Users,
     title: "Geriatric Rehabilitation",
     description: "Age-related mobility and strength issues",
     color: "text-accent",
+    slug: "geriatric-rehabilitation",
   },
   {
     icon: Baby,
     title: "Pediatric Conditions",
     description: "Cerebral palsy, Developmental delays",
     color: "text-primary",
+    slug: "pediatric-conditions",
   },
   {
     icon: Dumbbell,
     title: "Balance & Strength Training",
     description: "Fall prevention, muscle strengthening",
     color: "text-secondary",
+    slug: "balance-strength-training",
   },
   {
     icon: Heart,
     title: "Cardiac Rehabilitation",
     description: "Post-surgery, heart recovery therapy",
     color: "text-accent",
+    slug: "cardiac-rehabilitation",
   },
 ];
 
@@ -57,19 +64,26 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <Card 
               key={index}
-              className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-0 gradient-card animate-slide-up"
+              className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-0 gradient-card animate-slide-up group"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardContent className="p-6">
                 <div className={`${service.color} mb-4`}>
                   <service.icon className="w-12 h-12" />
                 </div>
-                <h3 className="font-poppins font-semibold text-xl mb-2">
+                <h3 className="font-poppins font-semibold text-xl mb-2 group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground mb-4">
                   {service.description}
                 </p>
+                <Link
+                  to={`/services/${service.slug}`}
+                  className="inline-flex items-center gap-2 text-primary font-medium text-sm hover:gap-3 transition-all"
+                >
+                  Read More
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
               </CardContent>
             </Card>
           ))}

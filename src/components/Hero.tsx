@@ -1,16 +1,15 @@
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Calendar, Phone } from "lucide-react";
+import { CheckCircle2, Phone } from "lucide-react";
 import heroImage from "@/assets/hero-therapy.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-40">
-      {/* Background Image with Overlay */}
+    <section className="relative min-h-[97vh] flex items-center pt-32">
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
           alt="Physiotherapy rehabilitation session"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
       </div>
@@ -18,9 +17,9 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl animate-fade-in">
           <h1 className="font-poppins text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-            Compassionate Physiotherapy &{" "}
+            Best Physiotherapist in{" "}
             <span className="bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent inline-block">
-              Neurological Rehabilitation
+              Hyderabad
             </span>
           </h1>
           
@@ -29,7 +28,6 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-10">
-            
             <Button variant="outline" size="xl" asChild>
               <a href="tel:9550836548" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />

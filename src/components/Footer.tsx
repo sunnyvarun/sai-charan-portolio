@@ -2,10 +2,20 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const serviceAreas = [
+    "Bandlaguda Jagir",
+    "Suncity",
+    "Narsingi",
+    "Kismathpur",
+    "Langer House",
+    "Kokapet",
+  ];
+
   return (
     <footer className="bg-foreground text-background py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          {/* About Section */}
           <div>
             <h3 className="font-poppins font-semibold text-xl mb-4">Dr. Sai Charan (PT)</h3>
             <p className="text-background/80 mb-2">BPT, MPT (Neurology)</p>
@@ -14,6 +24,7 @@ const Footer = () => {
             </p>
           </div>
 
+          {/* Quick Links */}
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
@@ -33,6 +44,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/blog" className="text-background/80 hover:text-background transition-colors">
+                  Blog
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="text-background/80 hover:text-background transition-colors">
                   Contact
                 </Link>
@@ -40,6 +56,22 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Service Areas */}
+          <div>
+            <h4 className="font-semibold mb-4">Service Areas</h4>
+            <ul className="space-y-2">
+              {serviceAreas.map((area, index) => (
+                <li key={index}>
+                  <span className="text-background/80 flex items-center gap-2">
+                    <MapPin className="w-3 h-3 text-background/60" />
+                    {area}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact Info */}
           <div>
             <h4 className="font-semibold mb-4">Contact Info</h4>
             <div className="space-y-2">

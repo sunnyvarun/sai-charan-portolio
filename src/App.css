@@ -1,17 +1,12 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+/* ✅ Hide scrollbar globally - WITHOUT breaking position:sticky */
+/* Key rule: never set overflow-y or height:100% on html/body — it breaks sticky */
 
-/* ✅ Hide scrollbar globally */
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow-x: hidden;  /* 🚀 removes horizontal scrollbar */
-  overflow-y: scroll;  /* keep vertical scrolling */
+  overflow-x: hidden; /* only hide horizontal overflow */
+  /* ❌ REMOVED: overflow-y: scroll  → breaks sticky */
+  /* ❌ REMOVED: height: 100%        → makes body = viewport height, scroll moves to <html> */
 }
 
 /* Chrome, Safari, Edge */
@@ -22,16 +17,8 @@ html, body {
 
 /* Firefox */
 * {
-  scrollbar-width: none;      /* Firefox */
-  -ms-overflow-style: none;   /* IE & Edge (older) */
-}
-
-/* Ensure scrolling still works without showing scrollbar */
-html, body {
-  overflow-y: scroll;  /* force scroll but hidden */
-  margin: 0;
-  padding: 0;
-  height: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 /* Logo styles */
@@ -48,14 +35,9 @@ html, body {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-/* Spin animation */
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
 
 @media (prefers-reduced-motion: no-preference) {
