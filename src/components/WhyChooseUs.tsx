@@ -67,15 +67,14 @@ const WhyChooseUs = () => {
           ))}
         </div>
 
-        {/* Trust Badge */}
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <div className="inline-flex items-center gap-2 bg-primary/5 px-6 py-3 rounded-full">
             <Stethoscope className="w-5 h-5 text-primary" />
             <span className="text-foreground font-medium">
               Trusted by 500+ patients across Hyderabad
             </span>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

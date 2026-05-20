@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   const serviceAreas = [
-    "Bandlaguda Jagir",
-    "Suncity",
-    "Narsingi",
-    "Kismathpur",
-    "Langer House",
-    "Kokapet",
+    { name: "Bandlaguda Jagir", slug: "bandlaguda-jagir" },
+    { name: "Suncity", slug: "suncity" },
+    { name: "Narsingi", slug: "narsingi" },
+    { name: "Kismathpur", slug: "kismathpur" },
+    { name: "Langer House", slug: "langer-house" },
+    { name: "Kokapet", slug: "kokapet" },
   ];
 
   return (
@@ -56,16 +56,19 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Service Areas */}
+          {/* Service Areas - CLICKABLE LINKS */}
           <div>
             <h4 className="font-semibold mb-4">Service Areas</h4>
             <ul className="space-y-2">
               {serviceAreas.map((area, index) => (
                 <li key={index}>
-                  <span className="text-background/80 flex items-center gap-2">
+                  <Link
+                    to={`/areas/${area.slug}`}
+                    className="text-background/80 hover:text-background transition-colors flex items-center gap-2"
+                  >
                     <MapPin className="w-3 h-3 text-background/60" />
-                    {area}
-                  </span>
+                    {area.name}
+                  </Link>
                 </li>
               ))}
             </ul>

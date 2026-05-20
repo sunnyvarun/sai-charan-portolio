@@ -22,6 +22,13 @@ import PediatricConditions from "./pages/services/PediatricConditions";
 import BalanceStrengthTraining from "./pages/services/BalanceStrengthTraining";
 import CardiacRehabilitation from "./pages/services/CardiacRehabilitation";
 
+import BandlagudaJagir from "./pages/areas/BandlagudaJagir";
+import Suncity from "./pages/areas/Suncity";
+import Narsingi from "./pages/areas/Narsingi";
+import Kismathpur from "./pages/areas/Kismathpur";
+import LangerHouse from "./pages/areas/LangerHouse";
+import Kokapet from "./pages/areas/Kokapet";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -49,6 +56,13 @@ const App = () => (
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
+
+              <Route path="/areas/bandlaguda-jagir" element={<BandlagudaJagir />} />
+              <Route path="/areas/suncity" element={<Suncity />} />
+              <Route path="/areas/narsingi" element={<Narsingi />} />
+              <Route path="/areas/kismathpur" element={<Kismathpur />} />
+              <Route path="/areas/langer-house" element={<LangerHouse />} />
+              <Route path="/areas/kokapet" element={<Kokapet />} />
             </Routes>
           </main>
           <Footer />
