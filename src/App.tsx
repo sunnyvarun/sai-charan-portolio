@@ -15,10 +15,10 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
-import NeurologicalConditions from "./pages/services/NeurologicalConditions";
-import OrthopedicConditions from "./pages/services/OrthopedicConditions";
-import GeriatricRehabilitation from "./pages/services/GeriatricRehabilitation";
-import PediatricConditions from "./pages/services/PediatricConditions";
+import NeurologicalPhysiotherapy from "./pages/services/NeurologicalPhysiotherapy";
+import OrthopedicPhysiotherapy from "./pages/services/OrthopedicPhysiotherapy";
+import GeriatricPhysiotherapy from "./pages/services/GeriatricPhysiotherapy";
+import PediatricPhysiotherapy from "./pages/services/PediatricPhysiotherapy";
 import BalanceStrengthTraining from "./pages/services/BalanceStrengthTraining";
 import CardiacRehabilitation from "./pages/services/CardiacRehabilitation";
 
@@ -45,12 +45,12 @@ const App = () => (
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
-              <Route path="/services/neurological-conditions" element={<NeurologicalConditions />} />
-              <Route path="/services/orthopedic-conditions" element={<OrthopedicConditions />} />
-              <Route path="/services/geriatric-rehabilitation" element={<GeriatricRehabilitation />} />
-              <Route path="/services/pediatric-conditions" element={<PediatricConditions />} />
-              <Route path="/services/balance-strength-training" element={<BalanceStrengthTraining />} />
-              <Route path="/services/cardiac-rehabilitation" element={<CardiacRehabilitation />} />
+              <Route path="/services/neuro-physiotherapy-in-hyderabad" element={<NeurologicalPhysiotherapy />} />
+              <Route path="/services/orthopedic-physiotherapy-rehabilitation-in-hyderabad" element={<OrthopedicPhysiotherapy />} />
+              <Route path="/services/geriatric-physiotherapy-in-hyderabad" element={<GeriatricPhysiotherapy />} />
+              <Route path="/services/pediatric-physiotherapy-in-hyderabad" element={<PediatricPhysiotherapy />} />
+              <Route path="/services/strength-balance-training-in-hyderabad" element={<BalanceStrengthTraining />} />
+              <Route path="/services/cardiac-rehabilitation-in-hyderabad" element={<CardiacRehabilitation />} />
               <Route path="/testimonials" element={<TestimonialsPage />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />

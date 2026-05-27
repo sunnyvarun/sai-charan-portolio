@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 type StickyMode = "relative" | "fixed" | "absolute";
 
-const CardiacRehabilitation = () => {
+const GeriatricPhysiotherapy = () => {
   const sidebarRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [mode, setMode] = useState<StickyMode>("relative");
@@ -82,38 +82,38 @@ const CardiacRehabilitation = () => {
     <>
       <Helmet>
         <title>
-          Cardiac Rehabilitation in Hyderabad | Expert Cardiac Physiotherapy - Sai Charan
+          Geriatric Physiotherapy in Hyderabad | Safe Elderly Rehabilitation – Sai Charan
         </title>
 
         <meta
           name="description"
-          content="Searching for cardiac rehabilitation in Hyderabad? Dr. Sai Charan Physio offers supervised cardiac physiotherapy, home visit services, and personalised recovery programs after bypass surgery, heart attack, and angioplasty."
+          content="Expert geriatric physiotherapy in Hyderabad for elderly mobility, balance, fall prevention, arthritis, stroke recovery & post-surgery rehab. Home visits available. Book today."
         />
 
         <meta
           name="keywords"
-          content="cardiac rehabilitation hyderabad, cardiac rehab physiotherapy, heart rehabilitation program, cardiac physiotherapy hyderabad, heart recovery physiotherapy, cardiovascular rehabilitation therapy, post heart surgery rehabilitation, cardiac fitness training physiotherapy, heart health rehabilitation, supervised cardiac exercise program, cardiac recovery treatment hyderabad"
+          content="geriatric physiotherapy hyderabad, geriatric rehabilitation hyderabad, geriatric physiotherapist for seniors, elderly physiotherapy services hyderabad, senior rehabilitation therapy, geriatric pain management physiotherapy, mobility rehabilitation for elderly, balance training for seniors, fall prevention physiotherapy elderly, arthritis treatment physiotherapy seniors, post injury rehabilitation elderly, senior mobility improvement physiotherapy"
         />
 
         <link
           rel="canonical"
-          href="https://charanphysio.com/services/cardiac-rehabilitation-in-hyderabad"
+          href="https://charanphysio.com/services/geriatric-physiotherapy-in-hyderabad"
         />
 
         {/* Open Graph */}
         <meta
           property="og:title"
-          content="Cardiac Rehabilitation in Hyderabad | Expert Cardiac Physiotherapy - Sai Charan"
+          content="Geriatric Physiotherapy in Hyderabad | Safe Elderly Rehabilitation – Sai Charan"
         />
 
         <meta
           property="og:description"
-          content="Expert cardiac rehabilitation and physiotherapy in Hyderabad after heart attack, bypass surgery, angioplasty, and heart failure."
+          content="Specialized geriatric physiotherapy and elderly rehabilitation in Hyderabad for mobility improvement, balance training, arthritis care, and fall prevention."
         />
 
         <meta
           property="og:url"
-          content="https://charanphysio.com/services/cardiac-rehabilitation-in-hyderabad"
+          content="https://charanphysio.com/services/geriatric-physiotherapy-in-hyderabad"
         />
 
         <meta
@@ -134,12 +134,12 @@ const CardiacRehabilitation = () => {
 
         <meta
           name="twitter:title"
-          content="Cardiac Rehabilitation in Hyderabad | Heart Recovery Care"
+          content="Geriatric Physiotherapy in Hyderabad | Elderly Rehabilitation"
         />
 
         <meta
           name="twitter:description"
-          content="Specialized cardiac physiotherapy and rehabilitation services in Hyderabad."
+          content="Expert elderly rehabilitation and geriatric physiotherapy care in Hyderabad."
         />
 
         <meta
@@ -152,10 +152,10 @@ const CardiacRehabilitation = () => {
       <div className="bg-gradient-to-br from-primary/10 via-background to-background py-16 md:py-20 border-b">
         <div className="container mx-auto px-4 text-center">
           <h1 className="font-poppins text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 max-w-4xl mx-auto leading-tight">
-            Cardiac Rehabilitation in Hyderabad
+            Geriatric Physiotherapy in Hyderabad
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Rebuild strength, stamina, and confidence safely after heart attack, bypass surgery, angioplasty, or heart failure.
+            Maintain mobility, strength, and independence with specialised physiotherapy for seniors, addressing age-related weakness, balance problems, and fall prevention.
           </p>
         </div>
       </div>
@@ -181,19 +181,20 @@ const CardiacRehabilitation = () => {
 
                 <ul className="space-y-3">
                   {[
-                    { id: "what-is", label: "What Is Cardiac Rehabilitation?" },
-                    { id: "why-essential", label: "Why It's Essential After Heart Conditions" },
-                    { id: "vs-general", label: "General Physiotherapy vs Cardiac Physiotherapy" },
-                    { id: "conditions", label: "Cardiac Conditions We Treat" },
-                    { id: "heart-attack", label: "Post Heart Attack Rehabilitation" },
-                    { id: "bypass", label: "Post Bypass Surgery (CABG) Recovery" },
-                    { id: "angioplasty", label: "Post Angioplasty Recovery" },
-                    { id: "heart-failure", label: "Heart Failure Rehabilitation" },
+                    { id: "what-is", label: "What Is Geriatric Physiotherapy?" },
+                    { id: "why-essential", label: "Why It's Essential for Elderly Care" },
+                    { id: "vs-general", label: "General Physiotherapy vs Geriatric Physiotherapy" },
+                    { id: "conditions", label: "Common Elderly Conditions We Treat" },
+                    { id: "arthritis", label: "Arthritis & Joint Pain Management" },
+                    { id: "stroke", label: "Stroke & Neurological Recovery" },
+                    { id: "post-surgery", label: "Post-Surgery Rehabilitation for Elderly" },
+                    { id: "balance", label: "Balance & Fall Prevention Therapy" },
+                    { id: "weakness", label: "Muscle Weakness & Mobility Issues" },
                     { id: "treatment-types", label: "Types of Treatments" },
                     { id: "assessment", label: "What We Check During Assessment" },
                     { id: "clinic-vs-home", label: "In-Clinic vs Home Visit" },
-                    { id: "home-services", label: "Home Cardiac Physiotherapy" },
-                    { id: "risks", label: "Risks Without Proper Cardiac Rehab" },
+                    { id: "home-services", label: "Home Physiotherapy for Elderly" },
+                    { id: "risks", label: "Risks Without Proper Elderly Care" },
                     { id: "areas", label: "Service Areas" },
                     { id: "why-us", label: "Why Choose Charan Physio" },
                     { id: "when-to-start", label: "When to Start" },
@@ -240,52 +241,52 @@ const CardiacRehabilitation = () => {
             {/* What Is */}
             <div id="what-is" className="scroll-mt-24">
               <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
-                What Is Cardiac Rehabilitation?
+                What Is Geriatric Physiotherapy?
               </h2>
               <p className="text-foreground/80 leading-relaxed mb-4">
-                Cardiac rehabilitation is a medically guided recovery programme designed for people who have experienced heart disease, cardiac surgery, or a significant cardiac event. It is not a fitness programme. It is a clinical service that combines supervised exercise, breathing retraining, circulation support, endurance building, and lifestyle education all carefully calibrated to what the individual patient's heart can safely handle at each stage of recovery.
+                Geriatric physiotherapy focuses specifically on evaluating and treating movement problems, weakness, balance disorders, joint stiffness, and mobility limitations that affect older adults. Unlike standard rehabilitation designed primarily for younger populations, geriatric rehabilitation services account for age-related physical changes, reduced endurance, multiple medical conditions, and the specific fall risks that come with ageing.
               </p>
               <p className="text-foreground/80 leading-relaxed">
-                Coming home after a heart attack or bypass surgery feels like relief. But within a few days, most patients discover something nobody fully warned them about. Climbing stairs leaves them winded. A slow walk around the house feels harder than expected. This is not unusual. It is what happens when the heart and body have been through significant trauma. Cardiac rehabilitation exists precisely for this moment, the gap between leaving the hospital and feeling genuinely functional again.
+                Getting older quietly changes how the body moves. Muscle strength drops gradually, joints stiffen after sitting too long, balance becomes unpredictable, and simple tasks like getting up from a chair or walking to the kitchen start taking more effort than they once did. Many elderly individuals simply reduce activity, avoiding stairs, skipping outdoor walks, and holding walls while moving through the house without realising these adjustments are warning signs of deeper functional decline. Physiotherapy helps seniors rebuild strength, improve walking stability, reduce fall risk, manage pain more effectively, and regain the confidence to move independently.
               </p>
             </div>
 
             {/* Why Essential */}
             <div id="why-essential" className="scroll-mt-24">
               <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Why Cardiac Rehabilitation is Essential After Heart Conditions
+                Why Geriatric Physiotherapy is Essential for Elderly Care
               </h2>
               <p className="text-foreground/80 leading-relaxed mb-4">
-                Heart surgery and cardiac events do not just affect the heart. They affect the entire body: the lungs, the muscles, the circulation, the nervous system, and the patient's confidence in their own physical capacity. Many people underestimate this. They expect to feel mostly normal within a week of discharge and are unprepared when simple tasks leave them breathless and drained.
+                Ageing affects the body in layers. Muscle mass reduces year by year, joint cartilage wears down gradually, and reaction time slows. Balance reactions that once prevented stumbling become less reliable. Elderly individuals often notice these changes as stiffness after sitting, slower walking, hesitation at stairs, and unusual fatigue during activities that never felt difficult before.
               </p>
               <p className="text-foreground/80 leading-relaxed">
-                Cardiac rehabilitation addresses the full picture of recovery. It improves stamina, restores breathing efficiency, rebuilds safe movement tolerance, and crucially helps patients understand what their body is telling them during exertion. Without it, the risk of prolonged weakness, poor exercise tolerance, anxiety-driven inactivity, and avoidable readmission increases significantly.
+                Geriatric physiotherapy addresses these changes directly rather than waiting for mobility decline to reach a crisis point. It supports safe mobility improvement, pain management, walking confidence, and recovery after strokes, fractures, hospitalisations, or surgical procedures. Physiotherapy also addresses the psychological dimension many seniors become reluctant to walk or move independently after falling, experiencing dizziness, or dealing with persistent joint pain. Fear of movement, left unaddressed, often causes faster functional decline than the original physical problem itself.
               </p>
             </div>
 
-            {/* General vs Cardiac */}
+            {/* General vs Geriatric */}
             <div id="vs-general" className="scroll-mt-24">
               <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
-                General Physiotherapy vs Cardiac Physiotherapy
+                General Physiotherapy vs Geriatric Physiotherapy
               </h2>
               <p className="text-foreground/80 leading-relaxed">
-                Not all physiotherapy is the same. General physiotherapy addresses musculoskeletal injuries, neurological recovery, and post-orthopaedic surgery rehabilitation. But cardiac patients have needs that fall outside standard physiotherapy practice. Cardiac physiotherapy follows a heart-safe exercise approach where every variable, including movement intensity, heart rate response, blood pressure changes, breathing pattern, oxygen saturation, and fatigue tolerance, is carefully monitored. Medications routinely prescribed after cardiac events, beta-blockers, diuretics, and anticoagulants, all affect how the body responds to exercise. A cardiac physiotherapist understands this and adjusts accordingly.
+                General physiotherapy may focus on aggressive strengthening, rapid return to activity, and performance-oriented recovery depending on the patient population. Geriatric physiotherapy follows a deliberately different approach because elderly patients require age-specific care that accounts for slower healing, reduced balance reserve, fatigue sensitivity, and multiple active medical conditions at the same time. Safety-focused rehabilitation becomes especially critical for seniors recovering from fractures, surgery, stroke, or significant deconditioning. Therapists carefully monitor walking stability, blood pressure response, breathing tolerance, and fatigue levels throughout sessions.
               </p>
             </div>
 
             {/* Conditions Overview */}
             <div id="conditions" className="scroll-mt-24">
               <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-6">
-                Cardiac Conditions We Treat
+                Common Elderly Conditions We Treat
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
-                  { title: "Post Heart Attack", desc: "Gradual, carefully monitored cardiovascular conditioning" },
-                  { title: "Post Bypass Surgery (CABG)", desc: "Sternal healing, chest expansion, postural recovery" },
-                  { title: "Post Angioplasty", desc: "Structured endurance rebuilding after procedure" },
-                  { title: "Heart Failure", desc: "Slow, carefully paced progression with meticulous monitoring" },
-                  { title: "Post Valve Surgery", desc: "Recovery after valve replacement or repair" },
-                  { title: "General Cardiac Conditioning", desc: "For chronic illness, prolonged inactivity, or multiple risk factors" },
+                  { title: "Arthritis & Joint Pain", desc: "Stiffness, swelling, reduced walking tolerance" },
+                  { title: "Stroke & Neurological Recovery", desc: "Gait training, balance exercises, transfer practice" },
+                  { title: "Post-Surgery Rehabilitation", desc: "Fractures, joint replacement, abdominal surgery" },
+                  { title: "Balance & Fall Prevention", desc: "Balance reactions, walking confidence, leg strength" },
+                  { title: "Muscle Weakness", desc: "Post-hospitalisation, prolonged inactivity recovery" },
+                  { title: "Age-Related Pain Disorders", desc: "Stiffness, tremors, poor posture, coordination loss" },
                 ].map((condition) => (
                   <div key={condition.title} className="bg-primary/5 rounded-xl p-4">
                     <h4 className="font-semibold text-foreground mb-1">{condition.title}</h4>
@@ -295,61 +296,71 @@ const CardiacRehabilitation = () => {
               </div>
             </div>
 
-            {/* Heart Attack */}
-            <div id="heart-attack" className="scroll-mt-24">
+            {/* Arthritis */}
+            <div id="arthritis" className="scroll-mt-24">
               <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Post Heart Attack Rehabilitation
+                Arthritis & Joint Pain Management
               </h2>
               <p className="text-foreground/80 leading-relaxed">
-                Heart attack patients often feel physically unstable even after medical stabilisation. Walking short distances may trigger anxiety because patients fear recurrence during exertion. Our approach starts with slowly monitored walking, breathing exercises, and gentle circulation work and builds trust alongside physical capacity. Many patients describe the moment they complete a walk they previously thought impossible as a turning point, not just physically but psychologically.
+                Arthritis causes stiffness, swelling, reduced walking tolerance, and pain during standing or stair climbing in many elderly patients. Many seniors significantly reduce movement because they worry that activity will worsen joint damage. In practice, complete inactivity typically increases stiffness and muscular weakness further, making movement more painful rather than protecting the joints. Physiotherapy focuses on improving joint mobility, muscular support, walking mechanics, and flexibility while reducing unnecessary joint stress during daily activities. Therapists also teach pacing strategies because elderly patients often swing between overactivity during good days and excessive rest during painful periods.
               </p>
             </div>
 
-            {/* Bypass */}
-            <div id="bypass" className="scroll-mt-24">
+            {/* Stroke */}
+            <div id="stroke" className="scroll-mt-24">
               <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Post Bypass Surgery (CABG) Recovery
+                Stroke & Neurological Recovery
               </h2>
               <p className="text-foreground/80 leading-relaxed">
-                Post-CABG physiotherapy addresses a wider range of recovery challenges than most patients anticipate. The sternal incision restricts chest expansion and arm movement for weeks. Many patients develop a protective forward posture that, left unaddressed, becomes a source of long-term stiffness and discomfort. Recovery systematically works through chest mobility, breathing efficiency, postural restoration, and progressive endurance in the correct sequence and at the appropriate pace for sternal healing.
+                Stroke recovery in elderly patients progresses more slowly because of age-related weakness, balance deficits, fatigue, and the presence of other medical conditions. Many seniors become fearful of walking after experiencing one-sided weakness or a significant loss of balance. Rehabilitation, therefore, emphasises confidence building alongside physical recovery from the very beginning. Therapy commonly includes gait training, balance exercises, transfer practice, strengthening, coordination work, and mobility retraining. Families sometimes expect a quick recovery following hospital discharge, though neurological improvement often continues gradually across months of consistent rehabilitation.
               </p>
             </div>
 
-            {/* Angioplasty */}
-            <div id="angioplasty" className="scroll-mt-24">
+            {/* Post Surgery */}
+            <div id="post-surgery" className="scroll-mt-24">
               <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Post Angioplasty Recovery
+                Post-Surgery Rehabilitation for Elderly
               </h2>
               <p className="text-foreground/80 leading-relaxed">
-                Angioplasty recovery patients frequently underestimate rehabilitation needs because procedures appear less invasive externally. However, underlying cardiac weakness, stamina reduction, and circulation concerns may still affect daily function considerably. The relatively quick discharge after angioplasty can create a false sense of full recovery when the cardiovascular system still needs structured rehabilitation support. Cardiac rehab after angioplasty builds the physical conditioning and lifestyle habits that meaningfully reduce the risk of future events.
+                Elderly patients recovering after fractures, joint replacement, abdominal surgery, or prolonged hospitalisation typically experience stiffness, weakness, and reduced endurance even after surgical healing proceeds normally. Simple activities such as standing from a chair or walking short distances may feel genuinely exhausting due to muscular deconditioning. Physiotherapy helps restore mobility safely while reducing fall risk throughout recovery. Therapists monitor walking stability, fatigue, swelling, and pain response carefully because elderly patients tolerate aggressive rehabilitation differently compared to younger adults.
               </p>
             </div>
 
-            {/* Heart Failure */}
-            <div id="heart-failure" className="scroll-mt-24">
+            {/* Balance */}
+            <div id="balance" className="scroll-mt-24">
               <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Heart Failure Rehabilitation
+                Balance & Fall Prevention Therapy
               </h2>
               <p className="text-foreground/80 leading-relaxed">
-                Heart failure rehabilitation operates under different rules from standard cardiac rehab. These patients fatigue more quickly, tolerate exertion less predictably, and may have very different capacity from one session to the next. Progress is slow and carefully paced. Monitoring is meticulous. These patients usually require slower progression compared to standard cardiac rehab cases because energy fluctuations and fatigue patterns vary significantly.
+                Fall prevention physiotherapy for elderly patients focuses heavily on balance reactions, walking confidence, leg strength, posture control, and environmental safety awareness. Many seniors reduce activity substantially after even minor falls when no significant injury occurs fear alone reshapes movement habits and confidence for months afterward. Therapists assess gait mechanics, standing stability, footwear habits, stair use patterns, and transfer ability while designing fall prevention programs. Families frequently overlook household hazards loose rugs, poor lighting, slippery bathroom flooring, or low seating arrangements that contribute meaningfully to fall risk.
+              </p>
+            </div>
+
+            {/* Weakness */}
+            <div id="weakness" className="scroll-mt-24">
+              <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
+                Muscle Weakness & Mobility Issues
+              </h2>
+              <p className="text-foreground/80 leading-relaxed">
+                Geriatric rehab for weakness commonly becomes necessary after illness, hospitalisation, prolonged inactivity, or nutritional decline. Elderly patients lose muscle mass more rapidly during bed rest than younger individuals do, which explains why recovery after even relatively short illness periods can feel surprisingly difficult for seniors. Therapy focuses on rebuilding endurance gradually through walking practice, sit-to-stand exercises, targeted strengthening, posture work, and controlled mobility training. Therapists monitor fatigue carefully because overexertion may discourage elderly patients from maintaining rehabilitation consistency between sessions.
               </p>
             </div>
 
             {/* Treatment Types */}
             <div id="treatment-types" className="scroll-mt-24">
               <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Types of Cardiac Rehabilitation Treatments
+                Types of Geriatric Physiotherapy Treatments
               </h2>
               <div className="grid sm:grid-cols-2 gap-3">
                 {[
-                  "Monitored walking programmes",
-                  "Low-resistance circulation exercises",
-                  "Progressive endurance work",
-                  "Functional movement training",
-                  "Breathing and respiratory physiotherapy",
+                  "Mobility training",
+                  "Strengthening exercises",
+                  "Balance training",
                   "Posture correction",
-                  "Circulation exercises for DVT prevention",
-                  "Energy management education",
+                  "Flexibility work",
+                  "Gait retraining",
+                  "Breathing exercises",
+                  "Functional movement practice",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3 bg-primary/5 rounded-xl p-3">
                     <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
@@ -362,19 +373,19 @@ const CardiacRehabilitation = () => {
             {/* Assessment */}
             <div id="assessment" className="scroll-mt-24">
               <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
-                What We Check During Cardiac Rehabilitation Assessment
+                What We Check During Geriatric Physiotherapy Assessment
               </h2>
               <p className="text-foreground/80 leading-relaxed mb-4">
-                Every cardiac rehabilitation programme begins with a detailed assessment. Safe progression is impossible without an accurate picture of where the patient actually is, not where they should be at this stage of recovery, but where they actually are.
+                A proper elderly rehabilitation assessment covers considerably more than measuring strength or asking about pain. Therapists evaluate walking safety, balance reactions, endurance, posture, joint mobility, coordination, transfer ability, and functional independence during typical daily activities.
               </p>
               <div className="grid sm:grid-cols-2 gap-4 mt-4">
                 {[
-                  "Heart rate and vital monitoring",
-                  "Exercise tolerance testing",
-                  "Breathing and oxygen level assessment",
-                  "Strength and endurance evaluation",
-                  "Risk factor assessment",
-                  "Posture and movement analysis",
+                  "Mobility and walking ability",
+                  "Balance and fall risk evaluation",
+                  "Muscle strength and endurance check",
+                  "Joint flexibility and pain assessment",
+                  "Daily activity function analysis",
+                  "Environmental safety evaluation",
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-2 border border-border/50 rounded-lg p-3">
                     <CheckCircle2 className="w-4 h-4 text-primary" />
@@ -396,10 +407,10 @@ const CardiacRehabilitation = () => {
                     <h3 className="font-semibold text-lg">In-Clinic</h3>
                   </div>
                   <ul className="space-y-2 text-sm text-foreground/80">
-                    <li className="flex items-start gap-2">• Close monitoring during exercise progression</li>
-                    <li className="flex items-start gap-2">• Immediate therapist response to warning signs</li>
-                    <li className="flex items-start gap-2">• Controlled clinical setting for safety</li>
-                    <li className="flex items-start gap-2">• Access to specialised cardiac rehab equipment</li>
+                    <li className="flex items-start gap-2">• Supervised balance and walking practice</li>
+                    <li className="flex items-start gap-2">• Access to parallel bars and therapy equipment</li>
+                    <li className="flex items-start gap-2">• Structured monitoring in controlled environment</li>
+                    <li className="flex items-start gap-2">• Best for post-surgery and neurological recovery</li>
                   </ul>
                 </div>
                 <div className="bg-primary/5 rounded-xl p-5">
@@ -408,10 +419,10 @@ const CardiacRehabilitation = () => {
                     <h3 className="font-semibold text-lg">Home Visit</h3>
                   </div>
                   <ul className="space-y-2 text-sm text-foreground/80">
-                    <li className="flex items-start gap-2">• No travel fatigue during early healing</li>
-                    <li className="flex items-start gap-2">• Reduced infection exposure after surgery</li>
-                    <li className="flex items-start gap-2">• Evaluate stair negotiation, household fatigue</li>
-                    <li className="flex items-start gap-2">• Lower movement anxiety in familiar surroundings</li>
+                    <li className="flex items-start gap-2">• No travel fatigue for seniors</li>
+                    <li className="flex items-start gap-2">• Identify real home hazards (rugs, lighting, stairs)</li>
+                    <li className="flex items-start gap-2">• Caregiver training in actual environment</li>
+                    <li className="flex items-start gap-2">• Ideal for severe weakness or balance instability</li>
                   </ul>
                 </div>
               </div>
@@ -420,28 +431,28 @@ const CardiacRehabilitation = () => {
             {/* Home Services */}
             <div id="home-services" className="scroll-mt-24">
               <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Cardiac Rehabilitation at Home in Hyderabad
+                Geriatric Physiotherapy at Home in Hyderabad
               </h2>
               <p className="text-foreground/80 leading-relaxed">
-                Home cardiac physiotherapy services have grown significantly in demand, and for straightforward reasons. Many patients, particularly in the first weeks after major cardiac surgery, are simply not safe or comfortable travelling to a clinic. The journey itself, the physical effort, the stress, and the exposure to infection risk can be counterproductive during early healing phases. Post-cardiac surgery rehab at home removes these barriers without reducing clinical quality. Home sessions include vitals monitoring, structured exercise progression, breathing training, and circulation work delivered by a qualified home visit cardiac physiotherapist.
+                Home-based elderly rehabilitation has become increasingly necessary because many seniors experience fatigue, dizziness, pain, or balance instability during travel itself. Families frequently postpone appointments because arranging transportation and caregiver assistance adds physical and logistical stress for elderly patients. Home physiotherapy reduces travel fatigue and allows elderly patients to participate in therapy within familiar surroundings where anxiety remains lower. Many seniors perform movements more confidently at home than in unfamiliar clinic environments. Caregiver involvement is another significant advantage. Family members observe exercise techniques, safe transfer methods, and walking assistance strategies directly during sessions.
               </p>
             </div>
 
             {/* Risks */}
             <div id="risks" className="scroll-mt-24">
               <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Risks Without Proper Cardiac Rehab
+                Risks Without Proper Elderly Care
               </h2>
               <div className="bg-amber-50 dark:bg-amber-950/20 border-l-4 border-amber-500 rounded-r-xl p-5 mb-4">
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5" />
                   <p className="text-foreground/80 leading-relaxed">
-                    Skipping cardiac rehabilitation has real, measurable consequences. Patients who remain sedentary after major cardiac events typically see significant endurance decline within two to three weeks. Walking distance drops. Fatigue arrives earlier. Simple activities that should gradually feel easier instead become progressively harder.
+                    Without structured rehabilitation, many elderly patients gradually become dependent on caregivers for activities they previously managed independently. Weakness, poor balance, fear of falling, and chronic pain often combine to push seniors toward avoiding movement unnecessarily. Reduced activity causes further strength loss and walking instability, creating a cycle that becomes progressively harder to reverse.
                   </p>
                 </div>
               </div>
               <p className="text-foreground/80 leading-relaxed">
-                Prolonged inactivity also increases risks beyond deconditioning: poor circulation raises the risk of deep vein thrombosis, reduced respiratory muscle use contributes to chest infections, weakened legs increase fall risk, and weight gain from inactivity places additional strain on a heart already working hard to recover. All of this is largely preventable through early, consistent, professionally guided cardiac rehabilitation.
+                Falls remain among the most serious risks for elderly patients with untreated mobility problems. Even relatively minor balance deficits can lead to fractures, hospitalisation, or lasting fear of walking independently again. Therapists frequently see patients arriving considerably weaker after hospital stays because prolonged bed rest reduces muscular endurance rapidly in older adults.
               </p>
             </div>
 
@@ -469,16 +480,16 @@ const CardiacRehabilitation = () => {
             {/* Why Us */}
             <div id="why-us" className="scroll-mt-24">
               <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Why Choose Charan Physio for Cardiac Rehabilitation
+                Why Choose Charan Physio for Geriatric Rehabilitation
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
-                  "Experienced cardiac physiotherapists",
-                  "Safe and supervised rehab programs",
+                  "Experienced elderly care specialists",
+                  "Safe and gentle therapy techniques",
                   "Personalized treatment plans",
-                  "Home and clinic services available",
-                  "Patient-focused care",
-                  "Medically supervised progression",
+                  "Home and clinic service options",
+                  "Patient-centered approach",
+                  "Long-term mobility preservation",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
@@ -491,26 +502,26 @@ const CardiacRehabilitation = () => {
             {/* When to Start */}
             <div id="when-to-start" className="scroll-mt-24">
               <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
-                When Should You Start Cardiac Rehabilitation?
+                When Should You Start Geriatric Physiotherapy?
               </h2>
               <p className="text-foreground/80 leading-relaxed">
-                The answer is: as soon as medically appropriate, which is almost always earlier than patients expect. Medically, rehabilitation can often begin within one to two weeks of discharge for most cardiac patients, provided their condition is stable. Delayed rehabilitation creates avoidable problems. Patients remaining sedentary for weeks after surgery commonly develop severe endurance decline, posture stiffness, poor circulation, and anxiety during activity. Timely rehabilitation creates safer recovery pacing where activity increases steadily according to cardiovascular tolerance and medical recovery stage.
+                Geriatric rehabilitation should begin as soon as mobility decline, weakness, balance problems, or reduced activity tolerance become noticeable. Many families delay therapy until falls, hospitalisation, or severe dependence have already occurred. Earlier intervention generally preserves function more effectively because muscles, balance reactions, and walking confidence decline progressively when inactivity continues. Starting rehabilitation early substantially reduces long-term complications and supports seniors in remaining active safely for longer periods.
               </p>
             </div>
 
             {/* Benefits */}
             <div id="benefits" className="scroll-mt-24">
               <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Benefits of Cardiac Rehabilitation
+                Benefits of Geriatric Physiotherapy
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
-                  "Faster recovery after surgery",
-                  "Improved heart health through progressive conditioning",
-                  "Better stamina and sustainable endurance",
-                  "Reduced hospital readmission risk",
-                  "Improved quality of life",
-                  "Lower mortality rates",
+                  "Increased independence in daily activities",
+                  "Reduced fall risk and fall-related injuries",
+                  "Improved mobility and walking confidence",
+                  "Better pain management without medication",
+                  "Enhanced quality of life and social participation",
+                  "Preserved strength and endurance",
                 ].map((benefit) => (
                   <div key={benefit} className="flex items-start gap-3 bg-primary/5 rounded-xl p-4">
                     <Heart className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
@@ -523,23 +534,23 @@ const CardiacRehabilitation = () => {
             {/* Cost */}
             <div id="cost" className="scroll-mt-24">
               <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Cardiac Rehabilitation Treatment Cost in Hyderabad
+                Geriatric Physiotherapy Treatment Cost in Hyderabad
               </h2>
               <p className="text-foreground/80 leading-relaxed mb-4">
-                Cardiac rehab treatment cost depends on recovery complexity, supervision level, treatment duration, therapist experience, home visit requirements, and the patient's physical condition during rehabilitation.
+                Families regularly ask about rehabilitation costs because geriatric physiotherapy often continues over longer periods than short-term injury recovery. Treatment duration depends heavily on mobility level, medical condition complexity, caregiver support availability, and session consistency.
               </p>
               <div className="grid sm:grid-cols-2 gap-4 mt-4">
                 <div className="border border-border/50 rounded-xl p-4">
                   <h4 className="font-semibold mb-2">Clinic Sessions</h4>
-                  <p className="text-sm text-muted-foreground">Generally more affordable. Includes structured supervision and equipment access.</p>
+                  <p className="text-sm text-muted-foreground">Basic mobility training and supervised exercise sessions</p>
                 </div>
                 <div className="border border-border/50 rounded-xl p-4">
                   <h4 className="font-semibold mb-2">Home Visit Sessions</h4>
-                  <p className="text-sm text-muted-foreground">Higher per session due to travel. Many patients find it worthwhile for reduced stress and better consistency during early recovery.</p>
+                  <p className="text-sm text-muted-foreground">Higher per session due to travel. Many families find it worthwhile for reduced patient stress and better real environment assessment</p>
                 </div>
               </div>
               <p className="text-foreground/80 leading-relaxed mt-4 text-sm">
-                <strong>Note:</strong> Patients should avoid choosing programmes purely based on low pricing because poorly supervised rehabilitation may delay recovery or create unsafe progression. Contact us for a personalised quote based on your individual situation.
+                <strong>Note:</strong> Steady moderate-frequency therapy maintained consistently usually delivers better outcomes than irregular intensive sessions interrupted by cost or fatigue. Families should evaluate rehabilitation quality and consistency rather than selecting treatment based solely on pricing. Contact us for a personalised quote based on your specific situation.
               </p>
             </div>
           </div>
@@ -550,4 +561,4 @@ const CardiacRehabilitation = () => {
   );
 };
 
-export default CardiacRehabilitation;
+export default GeriatricPhysiotherapy;

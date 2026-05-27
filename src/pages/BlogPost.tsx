@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useParams, useNavigate } from "react-router-dom";
 import { blogPosts } from "@/data/blogData";
 import { Calendar, User, Clock } from "lucide-react";
@@ -22,6 +23,74 @@ const BlogPost = () => {
   }
 
   return (
+    <>
+      <Helmet>
+        <title>
+          {post.title} | Sai Charan Physiotherapy Blog
+        </title>
+
+        <meta
+          name="description"
+          content={post.excerpt}
+        />
+
+        <meta
+          name="keywords"
+          content={`${post.category}, physiotherapy blog, rehabilitation blog, physiotherapy Hyderabad, injury recovery, physiotherapy treatment`}
+        />
+
+        <link
+          rel="canonical"
+          href={`https://charanphysio.com/blog/${post.slug}`}
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content={post.title}
+        />
+
+        <meta
+          property="og:description"
+          content={post.excerpt}
+        />
+
+        <meta
+          property="og:url"
+          content={`https://charanphysio.com/blog/${post.slug}`}
+        />
+
+        <meta
+          property="og:type"
+          content="article"
+        />
+
+        <meta
+          property="og:image"
+          content={post.image}
+        />
+
+        {/* Twitter */}
+        <meta
+          name="twitter:card"
+          content="summary_large_image"
+        />
+
+        <meta
+          name="twitter:title"
+          content={post.title}
+        />
+
+        <meta
+          name="twitter:description"
+          content={post.excerpt}
+        />
+
+        <meta
+          name="twitter:image"
+          content={post.image}
+        />
+      </Helmet>
     <div className="pt-20">
       {/* Hero Section - Minimal like screenshot */}
       <div className="bg-gradient-hero py-20">
@@ -164,6 +233,7 @@ const BlogPost = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

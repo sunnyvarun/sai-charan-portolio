@@ -32,67 +32,42 @@
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://charanphysio.com/allowElement</loc>
-	<lastmod>2026-05-17T09:22:12+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://charanphysio.com/allowedElements</loc>
-	<lastmod>2026-05-17T09:22:12+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://charanphysio.com/disallowedElements</loc>
-	<lastmod>2026-05-17T09:22:12+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://charanphysio.com/remarkPlugins</loc>
-	<lastmod>2026-05-17T09:22:12+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://charanphysio.com/components</loc>
-	<lastmod>2026-05-17T09:22:12+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://charanphysio.com/children</loc>
-	<lastmod>2026-05-17T09:22:12+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://charanphysio.com/urlTransform</loc>
-	<lastmod>2026-05-17T09:22:12+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://charanphysio.com/services/neurological-conditions</loc>
+	<loc>https://charanphysio.com/services/neuro-physiotherapy-in-hyderabad</loc>
 	<lastmod>2026-05-17T09:22:12+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://charanphysio.com/services/orthopedic-conditions</loc>
+	<loc>https://charanphysio.com/services/orthopedic-physiotherapy-rehabilitation-in-hyderabad</loc>
 	<lastmod>2026-05-17T09:22:12+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://charanphysio.com/services/geriatric-rehabilitation</loc>
+	<loc>https://charanphysio.com/services/geriatric-physiotherapy-in-hyderabad</loc>
 	<lastmod>2026-05-17T09:22:12+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://charanphysio.com/services/pediatric-conditions</loc>
+	<loc>https://charanphysio.com/services/pediatric-physiotherapy-in-hyderabad</loc>
 	<lastmod>2026-05-17T09:22:12+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://charanphysio.com/services/balance-strength-training</loc>
+	<loc>https://charanphysio.com/services/strength-balance-training-in-hyderabad</loc>
 	<lastmod>2026-05-17T09:22:12+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://charanphysio.com/services/cardiac-rehabilitation</loc>
+	<loc>https://charanphysio.com/services/cardiac-rehabilitation-in-hyderabad</loc>
+	<lastmod>2026-05-17T09:22:12+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://charanphysio.com/blog/rest-myth-why-physiotherapy-essential-for-tendon-recovery</loc>
+	<lastmod>2026-05-17T09:22:12+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://charanphysio.com/blog/achilles-tendon-rupture-postoperative-physiotherapy</loc>
 	<lastmod>2026-05-17T09:22:12+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
