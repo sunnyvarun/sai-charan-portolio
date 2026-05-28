@@ -102,7 +102,7 @@ const About = () => {
                 className="inline-flex items-center gap-2"
               >
                 <Phone className="w-5 h-5" />
-                Book Your Consultation
+                Book Your Consultatio
               </a>
             </Button>
           </div>
