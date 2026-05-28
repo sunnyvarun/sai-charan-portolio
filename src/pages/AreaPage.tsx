@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -18,21 +19,65 @@ const AreaPage = ({ areaName, areaSlug }: AreaPageProps) => {
   const [sidebarHeight, setSidebarHeight] = useState<number>(0);
   const [absoluteTop, setAbsoluteTop] = useState<number>(0);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = `Best Physiotherapist in ${areaName} | Dr. Sai Charan (PT)`;
-    
-    // Add or update meta description
-    let metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute("content", `Expert physiotherapy services in ${areaName}. Dr. Sai Charan (PT) provides balance physiotherapy, neurological rehab, orthopedic care, cardiac rehab, geriatric and pediatric physiotherapy. Home visits available. Book appointment today.`);
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
-      meta.content = `Expert physiotherapy services in ${areaName}. Dr. Sai Charan (PT) provides balance physiotherapy, neurological rehab, orthopedic care, cardiac rehab, geriatric and pediatric physiotherapy. Home visits available. Book appointment today.`;
-      document.head.appendChild(meta);
-    }
-  }, [areaName]);
+  useEffect(() => { 
+    window.scrollTo(0, 0); 
+  }, []);
+
+  const seoData: Record<string, {
+    title: string;
+    description: string;
+    keywords: string;
+  }> = {
+    "Bandlaguda Jagir": {
+      title: "Best Physiotherapist in Bandlaguda Jagir - Hyderabad - Sai Charan",
+      description:
+        "Discover expert physiotherapy in Bandlaguda Jagir, Hyderabad by Sai Charan for stroke rehab, mobility recovery & home physio services.",
+      keywords:
+        "physiotherapist in Bandlaguda Jagir, physiotherapy Bandlaguda Jagir Hyderabad",
+    },
+
+    "Suncity": {
+      title: "Best Physiotherapist in Suncity - Hyderabad - Sai Charan",
+      description:
+        "Discover advanced physiotherapy care in Suncity Hyderabad with Sai Charan for neurological recovery & pain management support.",
+      keywords:
+        "physiotherapist in Suncity, physiotherapy Suncity Hyderabad",
+    },
+
+    "Narsingi": {
+      title: "Best Physiotherapist in Narsingi - Hyderabad - Sai Charan",
+      description:
+        "Discover expert physiotherapy services in Narsingi Hyderabad for stroke recovery, mobility improvement & home rehab treatment.",
+      keywords:
+        "physiotherapist in Narsingi, physiotherapy Narsingi Hyderabad",
+    },
+
+    "Kismathpur": {
+      title: "Best Physiotherapist in Kismathpur - Hyderabad - Sai Charan",
+      description:
+        "Discover trusted home physiotherapy services in Kismathpur Hyderabad for back pain & neurological rehabilitation support.",
+      keywords:
+        "physiotherapist in Kismathpur, physiotherapy Kismathpur Hyderabad",
+    },
+
+    "Langer House": {
+      title: "Best Physiotherapist in Langer House - Hyderabad",
+      description:
+        "Discover trusted home physiotherapy in Langer House Hyderabad for neurological rehab & personalized recovery treatment.",
+      keywords:
+        "physiotherapist in Langer House, physiotherapy Langer House Hyderabad",
+    },
+
+    "Kokapet": {
+      title: "Best Physiotherapist in Kokapet - Hyderabad - Sai Charan",
+      description:
+        "Discover the best physiotherapist in Kokapet Hyderabad with Sai Charan for neuro rehab, pain relief & advanced home physiotherapy services.",
+      keywords:
+        "physiotherapist in Kokapet, physiotherapy Kokapet Hyderabad",
+    },
+  };
+
+  const currentSEO = seoData[areaName];
 
   useEffect(() => {
     const NAV_HEIGHT = 96;
@@ -105,38 +150,73 @@ const AreaPage = ({ areaName, areaSlug }: AreaPageProps) => {
     `Home Visit Available in ${areaName}`,
   ];
 
-  // Common Conditions Treated
-  const conditionsList = [
-    // Balance & Neurological
-    "Vertigo & Dizziness",
-    "Walking Imbalance",
-    "Stroke Recovery",
-    "Parkinson's Disease",
-    "Spinal Cord Injury",
-    // Orthopedic
-    "Back Pain & Slip Disc",
-    "Neck Pain & Cervical Issues",
-    "Knee Pain & Arthritis",
-    "Shoulder Pain & Frozen Shoulder",
-    "Sports Injuries",
-    "Post-Fracture Rehabilitation",
-    "Post-Surgical Recovery",
-    // Cardiac
-    "Post-Bypass Surgery",
-    "Post-Heart Attack Recovery",
-    "Post-Angioplasty Recovery",
-    // Geriatric
-    "Elderly Fall Prevention",
-    "Age-Related Weakness",
-    "Osteoporosis",
-    // Pediatric
-    "Cerebral Palsy",
-    "Developmental Delays",
-    "Low Muscle Tone (Hypotonia)",
-    "Toe Walking",
-  ];
-
   return (
+    <>
+      <Helmet>
+        <title>{currentSEO.title}</title>
+
+        <meta
+          name="description"
+          content={currentSEO.description}
+        />
+
+        <meta
+          name="keywords"
+          content={currentSEO.keywords}
+        />
+
+        <link
+          rel="canonical"
+          href={`https://charanphysio.com/areas/${areaSlug}`}
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content={currentSEO.title}
+        />
+
+        <meta
+          property="og:description"
+          content={currentSEO.description}
+        />
+
+        <meta
+          property="og:url"
+          content={`https://charanphysio.com/areas/${areaSlug}`}
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+
+        <meta
+          property="og:image"
+          content="https://charanphysio.com/og-image.jpg"
+        />
+
+        {/* Twitter */}
+        <meta
+          name="twitter:card"
+          content="summary_large_image"
+        />
+
+        <meta
+          name="twitter:title"
+          content={currentSEO.title}
+        />
+
+        <meta
+          name="twitter:description"
+          content={currentSEO.description}
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://charanphysio.com/og-image.jpg"
+        />
+      </Helmet>
     <div className="pt-20 bg-background">
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-primary/10 via-background to-background py-16 md:py-20 border-b">
@@ -254,26 +334,6 @@ const AreaPage = ({ areaName, areaSlug }: AreaPageProps) => {
               </div>
             </div>
 
-            {/* Conditions Treated */}
-            {/* <div id="conditions-treated" className="scroll-mt-24">
-              <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Conditions We Treat in {areaName}
-              </h2>
-              <p className="text-foreground/80 leading-relaxed mb-4">
-                Dr. Sai Charan (PT) has extensive experience treating a wide range of conditions for patients in {areaName}:
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {conditionsList.map((condition) => (
-                  <span
-                    key={condition}
-                    className="px-3 py-1.5 bg-muted rounded-full text-sm text-foreground/80"
-                  >
-                    {condition}
-                  </span>
-                ))}
-              </div>
-            </div> */}
-
             {/* Why Choose Us */}
             <div id="why-choose-us" className="scroll-mt-24">
               <h2 className="font-poppins text-2xl md:text-3xl font-bold text-foreground mb-4">
@@ -354,6 +414,7 @@ const AreaPage = ({ areaName, areaSlug }: AreaPageProps) => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
