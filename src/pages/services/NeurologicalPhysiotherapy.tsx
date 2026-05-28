@@ -60,12 +60,12 @@ const NeurologicalPhysiotherapy = () => {
   };
 
   const serviceAreas = [
-    { name: "Bandlaguda Jagir", slug: "bandlaguda-jagir" },
-    { name: "Suncity", slug: "suncity" },
-    { name: "Narsingi", slug: "narsingi" },
-    { name: "Kismathpur", slug: "kismathpur" },
-    { name: "Langer House", slug: "langer-house" },
-    { name: "Kokapet", slug: "kokapet" },
+    { name: "Bandlaguda Jagir", slug: "physiotherapist-in-bandlaguda-jagir-hyderabad" },
+    { name: "Suncity", slug: "physiotherapist-in-suncity-hyderabad" },
+    { name: "Narsingi", slug: "physiotherapist-in-narsingi-hyderabad" },
+    { name: "Kismathpur", slug: "physiotherapist-in-kismathpur-hyderabad" },
+    { name: "Langer House", slug: "physiotherapist-in-langer-house-hyderabad" },
+    { name: "Kokapet", slug: "physiotherapist-in-kokapet-hyderabad" },
   ];
 
   const getSidebarStyle = (): React.CSSProperties => {

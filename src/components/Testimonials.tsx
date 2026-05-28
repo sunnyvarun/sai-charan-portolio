@@ -26,15 +26,6 @@ const Testimonials = () => {
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="font-poppins text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Patient Testimonials
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Hear from our patients about their recovery journey
-          </p>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <Card

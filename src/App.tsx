@@ -57,12 +57,12 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
 
-              <Route path="/areas/bandlaguda-jagir" element={<BandlagudaJagir />} />
-              <Route path="/areas/suncity" element={<Suncity />} />
-              <Route path="/areas/narsingi" element={<Narsingi />} />
-              <Route path="/areas/kismathpur" element={<Kismathpur />} />
-              <Route path="/areas/langer-house" element={<LangerHouse />} />
-              <Route path="/areas/kokapet" element={<Kokapet />} />
+              <Route path="/areas/physiotherapist-in-bandlaguda-jagir-hyderabad" element={<BandlagudaJagir />} />
+              <Route path="/areas/physiotherapist-in-suncity-hyderabad" element={<Suncity />} />
+              <Route path="/areas/physiotherapist-in-narsingi-hyderabad" element={<Narsingi />} />
+              <Route path="/areas/physiotherapist-in-kismathpur-hyderabad" element={<Kismathpur />} />
+              <Route path="/areas/physiotherapist-in-langer-house-hyderabad" element={<LangerHouse />} />
+              <Route path="/areas/physiotherapist-in-kokapet-hyderabad" element={<Kokapet />} />
             </Routes>
           </main>
           <Footer />

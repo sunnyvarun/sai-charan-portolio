@@ -76,13 +76,13 @@ const AreaPage = ({ areaName, areaSlug }: AreaPageProps) => {
   };
 
   const nearbyAreas = [
-    "Suncity",
-    "Bandlaguda Jagir",
-    "Narsingi",
-    "Kismathpur",
-    "Langer House",
-    "Kokapet",
-  ].filter(area => area !== areaName);
+    { name: "Suncity", slug: "physiotherapist-in-suncity-hyderabad" },
+    { name: "Bandlaguda Jagir", slug: "physiotherapist-in-bandlaguda-jagir-hyderabad" },
+    { name: "Narsingi", slug: "physiotherapist-in-narsingi-hyderabad" },
+    { name: "Kismathpur", slug: "physiotherapist-in-kismathpur-hyderabad" },
+    { name: "Langer House", slug: "physiotherapist-in-langer-house-hyderabad" },
+    { name: "Kokapet", slug: "physiotherapist-in-kokapet-hyderabad" },
+  ].filter(area => area.name !== areaName);
 
   const getSidebarStyle = (): React.CSSProperties => {
     if (mode === "fixed") {
@@ -310,11 +310,11 @@ const AreaPage = ({ areaName, areaSlug }: AreaPageProps) => {
               <div className="flex flex-wrap gap-3">
                 {nearbyAreas.map((area) => (
                   <Link
-                    key={area}
-                    to={`/areas/${area.toLowerCase().replace(/\s+/g, '-')}`}
+                    key={area.slug}
+                    to={`/areas/${area.slug}`}
                     className="px-4 py-2 bg-muted rounded-full text-sm text-foreground/80 hover:bg-primary/10 hover:text-primary transition-colors inline-flex items-center gap-2"
                   >
-                    {area}
+                    {area.name}
                     <ArrowRight className="w-3 h-3" />
                   </Link>
                 ))}
